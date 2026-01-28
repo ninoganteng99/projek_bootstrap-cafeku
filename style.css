@@ -1,0 +1,7 @@
+.banner{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4)),url(cafe.jpg);
+    background-size: cover;
+    background-color: cover;
+    background-position: center;
+}
