@@ -5,3 +5,20 @@
     background-color: cover;
     background-position: center;
 }
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0. 0. 0. 0.2);
+}
+
+.icon-service{
+    width: 90px;
+    height: 90px;
+    border: solid#fff;
+    border-radius: 50%;
+    color: #fff;
+}
+.background-service{
+  height: auto;
+  background: purple;
+}
