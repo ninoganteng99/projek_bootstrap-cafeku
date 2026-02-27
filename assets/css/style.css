@@ -1,1 +1,160 @@
+/* BANNER */
+.banner {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../cafe.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
+/* PROMO */
+.background-promo {
+  height: auto;
+  background-color: #c0dffc;
+}
+
+.hovered-promo {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hovered-promo:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* SERVICE */
+.background-service {
+  height: auto;
+  background-color: #b5cef7;
+}
+
+.hovered-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.hovered-logo i {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.hovered-card:hover .hovered-logo {
+  background-color: #764dff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(26, 188, 156, 0.6);
+}
+
+.hovered-card:hover .hovered-logo i {
+  color: #0b3c49;
+}
+
+.icon-service {
+  width: 90px;
+  height: 90px;
+  border: solid #fff 2px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+/* PRODUK */
+.background-produk {
+  background-color: #c0dffc;
+}
+
+.card{
+   border-radius: 16px;
+}
+
+.background-produk .hovered-produk .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-produk .hovered-produk .card .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hovered-produk .card:hover {
+  transform: translateY(-10px) scale(1.02);
+  color: #fff;
+  background-color: #764dff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* REVIEW */
+.testimony {
+  background-color: #b5cef7 !important;
+}
+
+.testimony-card {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 16px;
+  padding: 28px;
+  transition: 0.3s;
+  height: 100%;
+  color: #fff;
+}
+
+.testimony-card .quote-icon {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.13);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.testimony-card .author {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 12px;
+}
+
+.testimony-card p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.testimony-card .stars {
+  color: #ffc107;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.testimony-card:hover {
+  transform: translateY(-6px);
+  background: #fff !important;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.testimony-card:hover .quote-icon,
+.testimony-card:hover .author,
+.testimony-card:hover p {
+  color: #000;
+}
+
+.testimony-card:hover .stars {
+  color: #ffc107;
+}
+
+/* RESERVATION */
+.background-reservation {
+  background-color: aliceblue;
+}
+
+/* SUBSCRIBE */
+.footer {
+  background-color: #595959;
+}
