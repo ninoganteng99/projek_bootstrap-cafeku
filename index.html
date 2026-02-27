@@ -6,9 +6,10 @@
     <title>CAFEKUU</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+    <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,14 +19,20 @@
         <a class="navbar-brand me-auto" href="#">CAFEKUU</a>
       <ul class="navbar-nav">
         <li class="nav-item me-5">
-          <a class="nav-link active" aria-current="true" href="#home">Home</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link" href="#">Produk</a>
-        </li>
-        <li class="nav-item me-5">
-          <a class="nav-link" href="#promo">Promo</a>
-        </li>
+              <a href="#home" class="nav-link"
+                ><i class="bi bi-house-door"></i> Home</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a href="#promo" class="nav-link"
+                ><i class="bi bi-ticket-perforated"></i> Promo</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a href="#service" class="nav-link"
+                ><i class="bi bi-fork-knife"></i> Service</a
+              >
+            </li>
         <li class="nav-item me-5">
           <a class="nav-link" tabindex="-1" aria-disabled="true"><i class="bi bi-cart"></i>Keranjang</a>
         </li>
@@ -33,181 +40,475 @@
     </div>
   </div>
 </nav>
-<section id="home">
-  <div class="container-fluid banner d-flex align-items-center">
-  <div class="container">
-       <h1 class="text-light text-center display-5 mb-1">Selamat Datang Di Cafekuu</h1>
-       <h2 class="text-light text-center display-7 mb-1">AYO NYAFEE REEKKK</h2><br>
-        <div class="input-group">
-          <select class="form-select" id="inputGroupSelect04" >
-           <option selected>KATEGORI COFFE</option>
-           <option value="1">AMERICANO</option>
-           <option value="2">MILK MATCHA</option>
-           <option value="3">KOPI SUSU</option>
+    <!-- NAVIGATION TUTUP -->
+
+    <!-- SECTION BANNER -->
+    <div class="container-fluid banner d-flex align-items-center">
+      <div class="container">
+        <h2 class="text-light text-center display-6 mb-1">
+          Welcome in My caffe
+        </h2>
+        <h3 class="text-light text-center display-8 mb-1">
+           AYO NYAFEE REKK
+        </h3>
+        <br />
+        <br />
+        <div class="input-group input-group-lg" id="produk">
+          <select id="inputGroupSelect04" class="form-control">
+            <option disabled selected hidden>Choice Your Favorite coffe</option>
+            <option value="1">Americano</option>
+            <option value="2">Milk Matcha</option>
+            <option value="3">Kopi Susu</option>
+            <option value="4">Cappucino</option>
           </select>
-          <button class="btn btn-lg btn-outline-warning text-light" type="button">Cari</button>
-       </div>
-  </div>
-</div>
-</section>
+          <button
+            class="btn btn-lg btn-outline-warning text-light"
+            type="button"
+          >
+            cari
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER TUTUP -->
 
-<section id="promo">
-  <div class="container-fluid py-5">
-    <div class="container">
-      <h2 class="text-center">Promo Minggu Ini</h2>
-
-      <div class="row mt-5 justify-content-center g-4">
-
-        <!-- Card 1 -->
-        <div class="col-12 col-md-4 hovered-card">
-          <div class="card h-100">
-            <img src="americano.png" class="card-img" alt="americano">
-            <div class="card-body">
-              <h5 class="card-title">
-              Enjoy a free Sunday with your purchase of americano Ice
-              </h5>
-              <p class="card-text">
-                americano ice with a luxurious taste
-              </p>
-              <a href="#" class="btn btn-primary">Buy</a>
+    <!-- SECTION PROMO -->
+    <div class="container-fluid py-5 background-promo">
+      <div class="container">
+        <h2 class="text-center text-light">Promo this week</h2>
+        <div class="row mt-5 justify-content-center">
+          <!-- CARD PROMO 1 -->
+          <div class="col-md-3">
+            <div class="card hovered-promo">
+              <img
+                src="assets/americano.png"/>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Enjoy a free Sunday with your purchase of americano Ice
+                </h5>
+                <p class="card-text">
+                  americano ice with a luxurious 
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-12 col-md-4 hovered-card">
-          <div class="card h-100">
-            <img src="kopsu.jpg" class="card-img" alt="kopsu">
-            <div class="card-body">
-              <h5 class="card-title">
-                A delicate coffe should be smooth and comforting
-              </h5>
-              <p class="card-text">
-                Creamy, smooth, and perfectly brewed
-              </p>
-              <a href="#" class="btn btn-primary">Buy</a>
+          <!-- CARD PROMO 2 -->
+          <div class="col-md-3">
+            <div class="card hovered-promo">
+              <img
+                src="assets/kopsu.jpg"/>
+              <div class="card-body">
+                <h5 class="card-title">
+                  A delicate coffe should be smooth and comforting
+                </h5>
+                <p class="card-text">
+                  Creamy, smooth, and perfectly brewed
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-12 col-md-4 hovered-card">
-          <div class="card h-100">
-            <img src="matcha.jpg" class="card-img" alt="matcha">
-            <div class="card-body">
-              <h5 class="card-title">
-                Get 20% off your entire matcha order this week!
-              </h5>
-              <p class="card-text">
-                Pure matcha, Pure energy
-              </p>
-              <a href="#" class="btn btn-primary">Buy</a>
+          <!-- CARD PROMO 3 -->
+          <div class="col-md-3">
+            <div class="card hovered-promo">
+              <img src="assets/matcha.jpg" class="card-img"/>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Get 20% off your entire matcha order this week!
+                </h5>
+                <p class="card-text">
+                  Pure matcha, Pure energy. BELI SEKARANG
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+    <!-- PROMO TUTUP -->
 
-<!--service-->
-    <div class="container-fluid py-5 background-service main-color">
+    <!-- SECTION SERVICE -->
+    <div class="container-fluid py-5 main-color background-service">
       <div class="container">
-        <h2 class="text-light text-center mb-5">Pelayanan Kami</h2>
+        <h2 class="text-light text-center mb-5">Our Services</h2>
         <div class="row justify-content-center">
-          <div class="col-lg-4">
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <!-- CARD SERVICE 1 -->
             <div class="d-flex justify-content-center">
-              <div class="icon-service d-flex align-items-center justify-content-center">
+              <div
+                class="icon-service d-flex align-items-center justify-content-center hovered-logo"
+              >
                 <i class="bi bi-bicycle display-5"></i>
               </div>
             </div>
             <div class="mt-3 text-white text-center">
               <h5>Delivery</h5>
-              <p>Kami melayani pengiriman ke berbagai kota, 
-                nikmati pelayanan dari kami, untuk memudahkan transaksi Anda</p>
+              <p>
+                Kami melayani pengiriman ke berbagai kota,nikmati pelayan dari kami,untuk memudahkan transaksi anda
+              </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <!-- CARD SERVICE 2 -->
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
             <div class="d-flex justify-content-center">
-              <div class="icon-service d-flex align-items-center justify-content-center">
+              <div
+                class="icon-service d-flex align-items-center justify-content-center hovered-logo"
+              >
                 <i class="bi bi-basket display-5"></i>
               </div>
             </div>
             <div class="mt-3 text-white text-center">
               <h5>Take Away</h5>
-              <p>Kami melayani proses take away, 
-                Anda tetap dapat menikmati sajian makanan dari Kami dimanapun Anda berada</p>
+              <p>
+                Kami melayani proses take away, Anda tetap dapat menikmati sajian makanan dari Kami dimanapun Anda berada
+              </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <!-- CARD SERVICE 3 -->
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
             <div class="d-flex justify-content-center">
-              <div class="icon-service d-flex align-items-center justify-content-center">
+              <div
+                class="icon-service d-flex align-items-center justify-content-center hovered-logo"
+              >
                 <i class="bi bi-cup-straw display-5"></i>
               </div>
             </div>
             <div class="mt-3 text-white text-center">
-              <h5>Dine in</h5>
-              <p>Tempat yang nyaman, udara yang sejuk, dan hidangan yang lezat. 
-                Anda dapat menikmati hidangan di Resto secara langsung</p>
+              <h5>Dine In</h5>
+              <p>
+                Tempat yang nyaman, udara yang sejuk, dan hidangan yang lezat. Anda dapat menikmati hidangan di Resto secara langsung
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- SERVICE TUTUP -->
 
-    <!--section produk-->
-    <div class="container-fluid py-5 ">
+    <!-- SECTION PRODUK -->
+    <div class="container-fluid py-5 background-produk">
       <div class="container">
-        <h2 class="text-center mb-5">TERLARIS</h2>
+        <h2 class="text-center mb-5 text-light">Best Seller</h2>
+        <div class="row">
+          <!-- CARD PRODUK 1 -->
+            <div class="col-sn-6 col-lg-3 hovered-produk mb-3">
+            <div class="card">
+              <img src="assets/americano.png" class="card-img" alt="americano" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">Americano</h5>
+                <p class="card-text">
+                  Rasakan cita rasa kopi dalam setiap tegukan
+                </p>
+                <h4 class="card-text text-warning">Rp. 17.000</h4>
+              </div>
+            </div>
+          </div>
+          <!-- CARD PRODUK 2 -->
+          <div class="col-sn-6 col-lg-3 hovered-produk mb-3">
+            <div class="card">
+              <img src="assets/kopsu.jpg" class="card-img" alt="kopsu" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">Kopi susu</h5>
+                <p class="card-text">
+                  Kopi Susu Creamy, bikin harimu lebih berenergi
+                </p>
+                <h4 class="card-text text-warning">Rp. 18.000</h4>
+              </div>
+            </div>
+          </div>
+          <!-- CARD PRODUK 3 -->
+          <div class="col-sm-6 col-lg-3 hovered-produk mb-3">
+            <div class="card">
+              <img src="assets/matcha.jpg" class="card-img" alt="matcha" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">Matcha</h5>
+                <p class="card-text">
+                  Segarnya matcha, bikin harimu lebih tenang dan fokus
+                </p>
+                <h4 class="card-text text-warning">Rp. 20.000</h4>
+              </div>
+            </div>
+          </div>
+          <!-- CARD PRODUK 4 -->
+          <div class="col-sm-6 col-lg-3 hovered-produk mb-3">
+            <div class="card">
+              <img src="assets/cappucino.jpg" class="card-img" alt="cappucino" />
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">Cappucino</h5>
+                <p class="card-text">
+                   Rasakan perpaduan espresso dan susu lembut dalam secangkir cappuccino
+                </p>
+                <h4 class="card-text text-warning">Rp.20.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- PROMO TUTUP -->
 
-    <!--section produk tutup-->
-    <div class="row">
-      <div class="col-sn-6 col-lg-3 hovered-card mb-3">
-        <div class="card">
-          <img src="americano.png" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-tittle text-warning">Americano</h5>
-            <p class="card-text">Rasakan cita rasa kopi dalam setiap tegukan</p>
-            <h4 class="card-text text-warning">Rp 15.000</h4>
+    <!-- SECTION REVIEW -->
+    <div class="container-fluid py-5 testimony">
+      <div class="container">
+        <h2 class="text-center text-light mb-2">Apa kata customer</h2>
+        <p
+          class="text-center mb-5"
+          style="color: rgba(255, 255, 255, 0.7); font-size: 0.95"
+        >
+          Customer satisfaction is our priority
+        </p>
+        <div class="row g-4">
+          <!-- CARD REVIEW 1 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="testimony-card">
+              <div class="quote-icon">
+                <h5>🥤 Kopi susu</h5>
+                <div class="author">- Orang baik</div>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  “Rasanya segar dan konsisten!”
+Minumannya dibuat dengan bahan berkualitas dan takaran yang pas. Rasanya balance, tidak terlalu manis, dan selalu segar setiap kali pesan.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sn-6 col-lg-3 hovered-card mb-3">
-        <div class="card">
-          <img src="kopsu.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-tittle text-warning">Kopi Susu</h5>
-            <p class="card-text">Kopi Susu Creamy, bikin harimu lebih berenergi </p>
-            <h4 class="card-text text-warning">Rp 18.000</h4>
+          <!-- CARD REVIEW 2 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="testimony-card">
+              <div class="quote-icon">
+                <h5>🧼 Kebersihan Tempat
+                </h5>
+                <div class="author">- Alnino</div>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+“Tempatnya bersih dan nyaman.”
+Meja, lantai, dan area sekitar selalu terlihat rapi. Jadi makin nyaman untuk makan di tempat.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sn-6 col-lg-3 hovered-card mb-3">
-        <div class="card">
-          <img src="matcha.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-tittle text-warning">Milk Matcha</h5>
-            <p class="card-text">Segarnya matcha, bikin harimu lebih tenang dan fokus</p>
-            <h4 class="card-text text-warning">Rp 20.000</h4>
+          <!-- CARD REVIEW 3 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="testimony-card">
+              <div class="quote-icon">
+                <h5>💰 Harga Terjangkau
+                </h5>
+                <div class="author">- Lia</div>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+“Worth it banget dengan kualitasnya.”
+Harga sesuai dengan rasa dan porsi yang didapat. Cocok untuk pelajar sampai keluarga.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sn-6 col-lg-3 hovered-card mb-3">
-        <div class="card">
-          <img src="cappucino.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-tittle text-warning">Cappucino</h5>
-            <p class="card-text">Rasakan perpaduan espresso dan susu lembut dalam secangkir cappuccino</p>
-            <h4 class="card-text text-warning">Rp 18.000</h4>
+          <!-- CARD REVIEW 4 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="testimony-card">
+              <div class="quote-icon">
+                <h5>🚀 Kecepatan Penyajian
+                </h5>
+                <div class="author">- Alzz</div>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  “Pesanan datang tanpa menunggu lama.”
+Walaupun sedang ramai, pesanan tetap disajikan dengan cepat dan tetap rapi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- CARD REVIEW 5 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="testimony-card">
+              <div class="quote-icon">
+                <h5>🎶 Suasana Tempat</h5>
+                <div class="author">- Fery</div>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  “Vibes-nya enak buat nongkrong.”
+Musiknya pas, pencahayaan nyaman, cocok untuk kumpul bareng teman atau keluarga.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- CARD REVIEW 6 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="testimony-card">
+              <div class="quote-icon">
+                <h5>📦 Packaging / Kemasan
+                .</h5>
+                <div class="author">- Ninogantengbgtbjirz</div>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i                >
+                </div>
+                <p>
+                  “Kemasan rapi dan aman.”
+Untuk take away, makanan dikemas dengan baik dan tidak mudah tumpah
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- REVIEW TUTUP -->
 
+    <!-- SECTION RESERVASI -->
+    <div class="container-fluid py-5 background-reservation">
+      <div class="container">
+        <h2 class="text-center mb-2">Reservation</h2>
+        <p class="text-center text-muted mb-5">
+          Don't miss out on a spot. Reserve now!!!
+        </p>
+        <div class="row justify-content-center">
+          <!-- FORM RESERVASI -->
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">No. Contact</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Many Table</label>
+                <input type="number" class="form-control" />
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-warning text-light">Reservation</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RESERVASI TUTUP -->
+
+    <!-- SECTION SUBSCRIBE -->
+    <div class="container-fluid py-5 footer">
+      <div class="container">
+        <h5 class="text-center text-light mb-3">Meet Us</h5>
+        <!-- LOGO -->
+        <div class="d-flex justify-content-center mb-5" style="gap: 70px">
+          <a
+            href="https://facebook.com/username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="https://instagram.com/username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a
+            href="https://youtube.com/@username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+        <h5 class="text-center text-light mb-1">Subscribe</h5>
+        <p class="text-center text-muted mb-3">
+          for information about promotions
+        </p>
+        <!-- SUBSCRIBE -->
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Write Your Email"
+              />
+              <button class="btn btn-warning text-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SUBSCRIBE TUTUP -->
     
+     <!-- SECTION FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <!-- Kolom 1 -->
+      <div class="col-md-4 mb-4">
+        <h5>Kafe Saya</h5>
+        <p class="text-secondary">
+          Tempat makan enak, nyaman, dan terjangkau untuk semua kalangan.
+        </p>
+      </div>
+
+      <!-- Kolom 2 -->
+      <div class="col-md-4 mb-4">
+        <h5>Navigasi</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Produk</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Promo</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Reservasi</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3 -->
+      <div class="col-md-4 mb-4">
+        <h5>Kontak</h5>
+        <p class="text-secondary mb-1">Jl.jalan bareng kapan ??</p>
+        <p class="text-secondary mb-1">+62 812 3458 9999</p>
+        <p class="text-secondary">Ninogantengbgtbjirz@email.com</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center text-secondary">
+      © 2025 Kafe Saya. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+        <!-- FOOTER TUTUP -->
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
 </html>
