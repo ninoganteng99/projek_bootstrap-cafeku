@@ -14,14 +14,16 @@
   background-color: #c0dffc;
 }
 
-.hovered-promo {
-  transition: all 0.3s ease;
-  cursor: pointer;
+.card-img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .hovered-promo:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color:  #764dff;
+  color: white;
+  transition: 0.7s ease;
 }
 
 /* SERVICE */
@@ -34,12 +36,12 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .hovered-logo i {
   color: white;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .hovered-card:hover .hovered-logo {
@@ -69,8 +71,13 @@
    border-radius: 16px;
 }
 
+.card-img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
 .background-produk .hovered-produk .card {
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -93,7 +100,7 @@
 
 /* REVIEW */
 .testimony {
-  background-color: #b5cef7 !important;
+  background-color: #764dff !important;
 }
 
 .testimony-card {
@@ -101,7 +108,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   border-radius: 16px;
   padding: 28px;
-  transition: 0.3s;
+  transition: 0.7s;
   height: 100%;
   color: #fff;
 }
