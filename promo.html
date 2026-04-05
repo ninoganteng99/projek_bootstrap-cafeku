@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFEKUU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+       <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand me-auto" href="#">CAFEKUU</a>
+      <ul class="navbar-nav">
+        <li class="nav-item me-5">
+              <a href="index.html" class="nav-link"
+                ><i class="bi bi-house-door"></i> Home</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a href="produk.html" class="nav-link"
+                ><i class="bi bi-bag-dash"></i> Produk</a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a href="#promo" class="nav-link"
+                ><i class="bi bi-ticket-perforated"></i> Promo</a
+              >
+            </li>
+        <li class="nav-item me-5">
+          <a class="nav-link" href="keranjang.html"><i class="bi bi-cart"></i>Keranjang</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- NAVIGATION TUTUP -->
+
+<!-- BANNER -->
+    <div class="container-fluid produk-banner align-items-center d-flex justify-content-center">
+        <div class="container">
+            <h1 class="text-light text-center mb-3">Semua Promo Untuk Anda</h1>
+            <div class="col-md-8 offset-md-2"></div>
+        </div>
+    </div>
+<!-- BANNER TUTUP -->
+
+<!-- Promo -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <!-- Kategori Promo -->
+         <div class="row justify-content-center mb-4">
+            <div class="col-sm-4 col-md-3 col-lg-2 mb-2">
+                <div class="btn btn-outline-warning w-100 fs-5 filter-btn active" data-target="semuaPromo">Semua Promo</div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2 mb-2">
+                <div class="btn btn-outline-warning w-100 fs-5 filter-btn" data-target="promoDiskon">Promo Diskon</div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2 mb-2">
+                <div class="btn btn-outline-warning w-100 fs-5 filter-btn" data-target="promoBonus">Promo Bonus</div>
+            </div>
+         </div>
+          <!-- Semua Promo -->
+           <div id="semuaPromo" class="promo-section">
+            <div class="row justify-content-center">
+                <!-- Batas 1 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/spageti.jpeg" data-lightbox="promo" data-title="Spagheti">
+                            <img src="assets/spageti.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Spagheti</h5>
+                            <p class="card-text">Spaghetti lezat dengan saus spesial diatasnya. Nikmati Diskon 20%! 🍝</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 2 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/americano.png" data-lightbox="promo" data-title="Americano">
+                            <img src="assets/americano.png" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Americano</h5>
+                            <p class="card-text">Cita Rasa Kopi Signature Yang Sesungguhnya. Dapatkan Promo Diskon 15%! ☕</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 3 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/french.jpeg" data-lightbox="promo" data-title="French fries">
+                            <img src="assets/french.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">French fries</h5>
+                            <p class="card-text">French fries renyah di luar, lembut di dalam. Dapatkan Diskon 25%! 🍟</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 4 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/matcha.jpg" data-lightbox="promo" data-title="Milk Matcha">
+                            <img src="assets/matcha.jpg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Milk Matcha</h5>
+                            <p class="card-text">Milk matcha creamy dan menyegarkan. Dapatkan Dengan Harga 17%! 🍃</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 5 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/cappucino.jpg" data-lightbox="promo" data-title="Cappucino">
+                            <img src="assets/cappucino.jpg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">Cappuccino creamy dengan aroma kopi yang nikmat.Diskon 20%! ☕</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 6 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/kopsu.jpg" data-lightbox="promo" data-title="Kopi Susu">
+                            <img src="assets/kopsu.jpg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Kopi Susu</h5>
+                            <p class="card-text">Perpaduan kopi dan susu yang pas dan nikmat. Dapatkan potongan 22%🥤</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 7 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/matchahot.jpeg" data-lightbox="promo" data-title="Hot Matcha ">
+                            <img src="assets/matchahot.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Matcha</h5>
+                            <p class="card-text">Hot matcha hangat dengan rasa teh hijau yang lembut dan menenangkan. Diskon 18%</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 8 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/quesillo.jpeg" data-lightbox="promo" data-title="Quisillo">
+                            <img src="assets/quesillo.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Quesillo</h5>
+                            <p class="card-text">Quesillo manis lembut yang lumer di mulut. Nikmati Promo Diskon 15%! 🍮</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+           </div>
+          <!-- Promo Diskon -->
+           <div id="promoDiskon" class="promo-section" style="display:none;">
+            <div class="row justify-content-center">
+                <!-- Batas 1 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/spageti.jpeg" data-lightbox="promo" data-title="Spagheti">
+                            <img src="assets/spageti.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Spagheti</h5>
+                            <p class="card-text">Spaghetti lezat dengan saus spesial diatasnya. Nikmati Diskon 20%! 🍝</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 2 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/americano.png" data-lightbox="promo" data-title="Americano">
+                            <img src="assets/americano.png" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Americano</h5>
+                            <p class="card-text">Cita Rasa Kopi Signature Yang Sesungguhnya. Dapatkan Promo Diskon 15%! ☕</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 3 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/french.jpeg" data-lightbox="promo" data-title="French fries">
+                            <img src="assets/french.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">French fries</h5>
+                            <p class="card-text">French fries renyah di luar, lembut di dalam. Dapatkan Diskon 25%! 🍟</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 4 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/matcha.jpg" data-lightbox="promo" data-title="Milk Matcha">
+                            <img src="assets/matcha.jpg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Milk Matcha</h5>
+                            <p class="card-text">Milk matcha creamy dan menyegarkan. Dapatkan Dengan Harga 17%! 🍃</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+           </div>
+          <!-- Promo Bonus -->
+           <div id="promoBonus" class="promo-section" style="display: none;">
+            <div class="row justify-content-center">
+                 <!-- Batas 1 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/cappucino.jpg" data-lightbox="promo" data-title="Cappucino">
+                            <img src="assets/cappucino.jpg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">Cappuccino creamy dengan aroma kopi yang nikmat.Diskon 20%! ☕</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 2 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/kopsu.jpg" data-lightbox="promo" data-title="Kopi Susu">
+                            <img src="assets/kopsu.jpg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Kopi Susu</h5>
+                            <p class="card-text">Perpaduan kopi dan susu yang pas dan nikmat. Dapatkan potongan 22%🥤</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 3 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/matchahot.jpeg" data-lightbox="promo" data-title="Hot Matcha ">
+                            <img src="assets/matchahot.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Matcha</h5>
+                            <p class="card-text">Hot matcha hangat dengan rasa teh hijau yang lembut dan menenangkan. Diskon 18%</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Batas 4 -->
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="assets/quesillo.jpeg" data-lightbox="promo" data-title="Quisillo">
+                            <img src="assets/quesillo.jpeg" class="card-img-top" alt="..." />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Quesillo</h5>
+                            <p class="card-text">Quesillo manis lembut yang lumer di mulut. Nikmati Promo Diskon 15%! 🍮</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- SECTION SUBSCRIBE -->
+<div class="container-fluid py-5" style="background-color:#5a5a5a;">
+  <div class="container text-center">
+
+    <h5 class="text-light mb-4">Temui Kami</h5>
+
+    <!-- LOGO -->
+        <div class="d-flex justify-content-center mb-5" style="gap: 70px">
+          <a
+            href="https://facebook.com/username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="https://instagram.com/username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a
+            href="https://youtube.com/@username"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+        <h5 class="text-center text-light mb-1">Subscribe</h5>
+         <p class="text-light opacity-75 mb-4">
+          untuk informasi tentang promo
+        </p>
+        <!-- SUBSCRIBE -->
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Write Your Email"
+              />
+              <button class="btn btn-warning text-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SUBSCRIBE TUTUP -->
+    
+     <!-- SECTION FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Kolom 1 -->
+      <div class="col-md-4 mb-4">
+        <h5>Kafe Saya</h5>
+        <p class="text-secondary">
+          Tempat makan enak, nyaman, dan terjangkau untuk semua kalangan.
+        </p>
+      </div>
+
+      <!-- Kolom 2 -->
+      <div class="col-md-4 mb-4">
+        <h5>Navigasi</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
+          <li><a href="produk.html" class="text-decoration-none text-secondary">Produk</a></li>
+          <li><a href="#" class="text-decoration-none text-secondary">Promo</a></li>
+          <li><a href="keranjang.html" class="text-decoration-none text-secondary">Keranjang</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3 -->
+      <div class="col-md-4 mb-4">
+        <h5>Kontak</h5>
+        <p class="text-secondary mb-1">Jl.jalan bareng kapan ??</p>
+        <p class="text-secondary mb-1">+62 812 3458 9999</p>
+        <p class="text-secondary">Ninogantengbgtbjirz@email.com</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center text-secondary">
+      © 2025 Kafe Saya. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+        <!-- FOOTER TUTUP -->
+        
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+<script>
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const sections = ["semuaPromo", "promoDiskon", "promoBonus"];
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var target = btn.getAttribute("data-target");
+
+          filterBtns.forEach(function (b) {
+            b.classList.remove("active");
+          });
+          btn.classList.add("active");
+
+          sections.forEach(function (id) {
+            var el = document.getElementById(id);
+            if (id === target) {
+              el.style.display = "block";
+
+              el.classList.remove("promo-section");
+              void el.offsetWidth;
+              el.classList.add("promo-section");
+            } else {
+              el.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+</body>
+
+</html>
